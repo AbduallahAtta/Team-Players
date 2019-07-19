@@ -9,7 +9,7 @@ import org.koin.dsl.module
  * Created by AbdullahAtta on 7/7/2019.
  */
 
-val teamModule = module{
+val teamModule = module {
     factory { TeamRepository() }
     viewModel { TeamViewModel() }
 }

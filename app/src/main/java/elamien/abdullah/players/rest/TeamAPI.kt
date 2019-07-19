@@ -1,7 +1,7 @@
 package elamien.abdullah.players.rest
 
 import elamien.abdullah.players.models.TeamPlayers
-import retrofit2.Call
+import io.reactivex.Flowable
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -11,5 +11,5 @@ import retrofit2.http.Query
 interface TeamAPI {
 
     @GET("api/v1/json/1/searchplayers.php")
-    fun getTeamPlayer(@Query("t") team: String): Call<TeamPlayers>
+    fun getTeamPlayer(@Query("t") team: String): Flowable<TeamPlayers>
 }

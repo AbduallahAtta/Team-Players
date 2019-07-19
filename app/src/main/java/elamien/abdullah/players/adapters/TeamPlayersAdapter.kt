@@ -27,7 +27,8 @@ class TeamPlayersAdapter(private val context: Context, private val players: List
         holder.bind(players[position])
     }
 
-    inner class TeamPlayerListViewHolder(private val binding: ListItemPlayerNameBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class TeamPlayerListViewHolder(private val binding: ListItemPlayerNameBinding) :
+        RecyclerView.ViewHolder(binding.root) {
 
         fun bind(player: Player) {
             binding.player = player
